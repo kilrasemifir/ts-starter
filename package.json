@@ -1,0 +1,33 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "typescript starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kilrasemifir/ts-starter.git"
+  },
+  "keywords": [
+    "starter"
+  ],
+  "author": "killian raoux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kilrasemifir/ts-starter/issues"
+  },
+  "homepage": "https://github.com/kilrasemifir/ts-starter#readme",
+  "dependencies": {
+    "nodemon-webpack-plugin": "^4.3.1",
+    "ts-loader": "^7.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
+}
