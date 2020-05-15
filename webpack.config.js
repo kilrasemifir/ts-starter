@@ -1,8 +1,8 @@
 const NodemonPlugin = require('nodemon-webpack-plugin')
 const path = require('path')
 module.exports = {
-    entry: './src/index.js',
-    'mode':'none',
+    entry: './src/index.ts',
+    mode:'none',
     watch:true,
     output: {
         filename: 'main.js',
@@ -11,16 +11,19 @@ module.exports = {
     module:{
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.ts?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,
             }
         ]
     },
+    resolve: {
+        extensions: ['.ts', '.js', '.json']
+    },
     plugins: [
         new NodemonPlugin({
             ignore:['node_modules/*'],
-            ext:'js'
+            ext:'.ts'
         })
     ]
 }
