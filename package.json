@@ -21,13 +21,15 @@
   },
   "homepage": "https://github.com/kilrasemifir/ts-starter#readme",
   "dependencies": {
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11",
+    "@types/mongoose": "^5.0.7",
     "nodemon-webpack-plugin": "^4.3.1",
     "ts-loader": "^7.0.4",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.2",
     "webpack": "^4.43.0"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.11"
   }
 }

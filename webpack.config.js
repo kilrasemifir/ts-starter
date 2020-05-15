@@ -4,8 +4,10 @@ module.exports = {
     entry: './src/index.ts',
     mode:'none',
     watch:true,
+    target: "node",
     output: {
         filename: 'main.js',
+        libraryTarget: "umd",
         path: path.resolve('./dist')
     },
     module:{
