@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/kilrasemifir/ts-starter#readme",
   "dependencies": {
+    "@types/node": "^14.0.1",
     "eslint-cli": "^1.1.1",
     "nodemon-webpack-plugin": "^4.3.1",
     "ts-loader": "^7.0.4",
