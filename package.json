@@ -4,8 +4,11 @@
   "description": "typescript starter",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "webpack --config webpack.dev.js --watch",
+    "start:no-daemon": "tsc src/main/index.ts && node dist/main.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -20,24 +23,27 @@
     "url": "https://github.com/kilrasemifir/ts-starter/issues"
   },
   "homepage": "https://github.com/kilrasemifir/ts-starter#readme",
-  "dependencies": {
-    "@types/node": "^14.0.1",
-    "eslint-cli": "^1.1.1",
-    "nodemon-webpack-plugin": "^4.3.1",
-    "ts-loader": "^7.0.4",
-    "ts-node": "^8.10.1",
-    "typescript": "^3.9.2",
-    "webpack": "^4.43.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "@types/node": "^14.0.1",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "eslint": "^7.0.0",
+    "eslint-cli": "^1.1.1",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "webpack-cli": "^3.3.11"
+    "jest": "^26.6.3",
+    "nodemon-webpack-plugin": "^4.3.1",
+    "ts-jest": "^26.5.4",
+    "ts-loader": "^7.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.9",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^5.7.3"
   }
 }
