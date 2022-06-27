@@ -41,7 +41,10 @@ Pour lancer le coverage:
 ```sh
 npm run test:coverage
 ```
-    
+
+## Notes de version
+
+Voir [CHANGELOG.md](./CHANGELOG.md)
 
 2. Pour lancer les tests:
     * Pour lancer les tests unitaires sans coverage:
