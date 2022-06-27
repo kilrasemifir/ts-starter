@@ -10,9 +10,9 @@
       "dom"
     ],
     /* We want to generate a sourcemap  */
-    "sourceMap": true,
+    "sourceMap": false,
     /* All files will be compiled in build directory  */
-    "outDir": "./build"
+    "outDir": "./dist",
   },
   "include": [
       "src/**/*"
